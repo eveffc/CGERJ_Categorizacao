@@ -1,0 +1,19 @@
+{
+  "name": "cgerj_categorizacao",
+  "version": "1.0.0",
+  "description": "Este é o repositório do projeto Exame Front CGE, um teste de desenvolvimento web. O projeto consiste em duas partes: o frontend, desenvolvido em Next.js com TypeScript, e o backend, desenvolvido em Node.js com MongoDB. O objetivo é criar uma aplicação de gerenciamento de categorias de produtos e produtos, com operações CRUD (Create, Read, Update, Delete).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eveffc/CGERJ_Categorizacao.git"
+  },
+  "author": "Evelyn Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eveffc/CGERJ_Categorizacao/issues"
+  },
+  "homepage": "https://github.com/eveffc/CGERJ_Categorizacao#readme"
+}
