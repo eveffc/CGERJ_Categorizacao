@@ -25,7 +25,8 @@ export default function Login() {
                         <input style={styles.input} placeholder='Senha' type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
                     </div>
                     <div style={styles.actions}>
-                        <button style={styles.submitButton} type='submit'>Entrar</button> 
+                        <a href='./home/index' style={styles.submitButton} type='submit'>Entrar</a> 
+                        {/* <button style={styles.submitButton} type='submit'>Entrar</button>  */}
                     </div>
                     
                 </form>
