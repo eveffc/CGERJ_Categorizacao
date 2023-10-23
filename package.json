@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eveffc/CGERJ_Categorizacao/issues"
   },
-  "homepage": "https://github.com/eveffc/CGERJ_Categorizacao#readme"
+  "homepage": "https://github.com/eveffc/CGERJ_Categorizacao#readme",
+  "dependencies": {
+    "react-router-dom": "^6.17.0"
+  }
 }
