@@ -1,19 +1,15 @@
 import React, {useState} from  'react';
-import {Link, Navigate, useNavigate} from 'react-router-dom';
 import Head from 'next/head';
-import Home from '../home/index';
+import styles from './styles';
 
 export default function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [loggedIn, setLoggedIn] = useState(false);
 
-    const handleLogin = () => {
-        if (email && password ) {
-            setLoggedIn(true);
-          } else {
-            alert('Credenciais inválidas. Tente novamente.');
-          }
+    const [email, setEmail] = useState ("");
+    const [password, setPassword] = useState ("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("submit");
     };
 
     return (
@@ -22,14 +18,14 @@ export default function Login() {
                 <title>Exame Prático CGE-RJ</title>
             </Head>
           
-            <div>
-                <input placeholder='E-mail' type='email' value={email} onChange={(e) => setEmail(e.target.value)} required></input>
-                <input placeholder='Senha' type='password' value={password}  onChange={(e) => setPassword(e.target.value)} required></input>
-                <button type='button' onClick={handleLogin}>Entrar</button> 
-
-                {loggedIn &&(
-                    <Link to="../home/index"></Link>
-                )}
+            <div id='container'>
+                <form className='form' onSubmit={handleSubmit}>
+                    <div className='input'>
+                        <input placeholder='E-mail' type='email'  id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                        <input placeholder='Senha' type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
+                    </div>
+                    <button className='actions' type='submit'>Entrar</button> 
+                </form>
             </div>
         </>
     );
