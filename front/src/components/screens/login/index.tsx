@@ -18,13 +18,16 @@ export default function Login() {
                 <title>Exame Prático CGE-RJ</title>
             </Head>
           
-            <div id='container'>
-                <form className='form' onSubmit={handleSubmit}>
-                    <div className='input'>
-                        <input placeholder='E-mail' type='email'  id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
-                        <input placeholder='Senha' type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
+            <div style={styles.container}>
+                <form style={styles.form} onSubmit={handleSubmit}>
+                    <div style={styles.inputForm}>
+                        <input style={styles.input} placeholder='E-mail' type='email'  id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                        <input style={styles.input} placeholder='Senha' type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
                     </div>
-                    <button className='actions' type='submit'>Entrar</button> 
+                    <div style={styles.actions}>
+                        <button style={styles.submitButton} type='submit'>Entrar</button> 
+                    </div>
+                    
                 </form>
             </div>
         </>
