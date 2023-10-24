@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: right;
-  height: 97vh;
+  height: 97.5vh;
   background: linear-gradient(to bottom, #d8d8d8, #cfcfcf);
 }
 
@@ -28,11 +28,13 @@
 .input {
 display: flex;
 border: none;
-width: 280px;
 border-radius: 4px;
 outline: none;
-margin: 10px;
+width: 280px;
 height: 30px;
+margin: 10px;
+padding-left: 10px;
+
 }
 
 .submitButton {
