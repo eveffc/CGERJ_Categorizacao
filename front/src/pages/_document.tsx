@@ -6,10 +6,10 @@ export default function Document() {
             <Head>
                 <link rel="icon" href="/logo512.png" />
             </Head>
-            <body>
-                <Main />
-                <NextScript />
-            </body>
+
+            <Main />
+            <NextScript />
+
         </Html>
     );
 }

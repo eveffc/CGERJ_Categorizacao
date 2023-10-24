@@ -1,6 +1,9 @@
 import React, {useState} from  'react';
-import {Link, Navigate, useNavigate} from 'react-router-dom';
 import Head from 'next/head';
+import AddButtom from '@/components/UI/AddButton/Index';
+import Header from '@/components/UI/Headerpage/index';
+import styles from './styles.module.css';
+
 
 export default function Home() {
 
@@ -9,11 +12,20 @@ export default function Home() {
             <Head>
                 <title>Exame Prático CGE-RJ</title>
             </Head>
-            <body>
-                <view>
-                  home
-                </view>
-            </body>
+            <div className={styles.page}>
+                <Header />
+                <div className={styles.container}>
+                    <input className={styles.search} placeholder='pesquisar' type='text'></input>
+                    <div className={styles.space}></div>
+                    <div className={styles.buttom}>
+                        <AddButtom/>
+                    </div>
+                </div>
+
+                <div className={styles.table}>
+              
+                </div>
+            </div>
         </>
     );
 }
