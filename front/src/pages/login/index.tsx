@@ -1,7 +1,7 @@
 import React, {useState} from  'react';
 import Head from 'next/head';
 import styles from './styles.module.css';
-import Logo from '../../../public/img/icons/LogoV.png';
+import Logo from '../../public/img/icons/LogoV.png';
 
 const Login: React.FC = () => {
 

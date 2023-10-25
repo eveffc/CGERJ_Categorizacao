@@ -1,8 +1,6 @@
-import React, {useState} from  'react';
+import Header from '../components/Headerpage';
 import Head from 'next/head';
 import Link from 'next/link';
-import AddButtom from '@/components/UI/AddButton/Index';
-import Header from '@/components/UI/Headerpage/index';
 import styles from './styles.module.css';
 
 
@@ -21,12 +19,11 @@ export default function Home() {
                         <input className={styles.input} placeholder='Item'  id='item' ></input>
                         <select className={styles.select} id="cargo" name="cargo" value="<?php echo isset($row['cargo'])? $row['cargo'] : ''; ?>" required ></select>
                         <textarea className={styles.textarea} placeholder='Descrição' id='descricao'></textarea>
-                        <button className={styles.submitButton} type='submit'>Salvar</button> 
-                        <div className={styles.buttom}>
-                        <Link  href="/form">
-                                cancelar
+                        
+                        <button className={styles.submitButton} type='submit'>Salvar</button>
+                        <Link  href="/home" className={styles.linkButton}>
+                            cancelar
                         </Link> 
-                        </div>
                     </form>
                 </div>
 

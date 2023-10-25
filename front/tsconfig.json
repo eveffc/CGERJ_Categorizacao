@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/screens/login/styles.tsx", "src/components/UI/AddButton/Index.tsx", "src/components/screens/home/index.tsx", "src/components/screens/login/index.tsx", "src/components/screens/form/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/login/styles.tsx", "src/components/AddButton/Index.tsx", "src/pages/home/index.tsx", "src/pages/login/index.tsx", "src/pages/form/index.tsx"],
   "exclude": ["node_modules"]
 }

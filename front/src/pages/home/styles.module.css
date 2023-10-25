@@ -2,7 +2,7 @@
     grid-row-start: 10;
     grid-column-start: 12;
     justify-self:center;
-    height:97vmin;
+    height:97vh;
     background-color: #e4e4e4;
 }
 .container{
@@ -15,12 +15,23 @@
     justify-content: flex-end;
     margin: 20px;
 }
+.linkButton{
+    text-decoration: none;
+}
+.logoutButton{
+    display: flex;
+    justify-self: flex-end;
+    background-color:#47974b;
+    color: #ffffff;
+    border-color: #e4e4e4;
+}
 .space{
     width: 60%;
 }
 .search{
     display: flex;
     border: none;
+    outline: none;
     padding-left: 10px;
     border-radius: 10px;
     width: 300px;
