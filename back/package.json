@@ -1,31 +1,22 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eveffc/CGERJ_Categorizacao.git"
-  },
+  "repository": "https://github.com/eveffc/CGERJ_Categorizacao.git",
   "author": "Evelyn Santos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eveffc/CGERJ_Categorizacao/issues"
-  },
-  "homepage": "https://github.com/eveffc/CGERJ_Categorizacao#readme",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
     "mongodb": "^6.2.0",
-    "mongoose": "^7.6.3"
+    "mongoose": "^6.1.3"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
     "sucrase": "^3.34.0"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
   }
 }

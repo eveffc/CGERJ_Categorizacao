@@ -16,8 +16,8 @@ export default function Home() {
                 <div className={styles.container}>
                     <h1 className={styles.h1}>Novo cadastro</h1>
                     <form className={styles.form}>
-                        <input className={styles.input} placeholder='Item'  id='item' ></input>
-                        <select className={styles.select} id="cargo" name="cargo" value="<?php echo isset($row['cargo'])? $row['cargo'] : ''; ?>" required ></select>
+                        <input className={styles.input} placeholder='Item'  id='nome' ></input>
+                        <select className={styles.select} id="tipo" name="tipo" value="<?php echo isset($row['tipo'])? $row['tipo'] : ''; ?>" required ></select>
                         <textarea className={styles.textarea} placeholder='Descrição' id='descricao'></textarea>
                         
                         <button className={styles.submitButton} type='submit'>Salvar</button>
