@@ -1,9 +1,7 @@
 import { Router } from "express";
-import TesteController from "./controllers/TesteController";
 import Itenscontroller from "./controllers/Itenscontroller";
 const routes = new Router();
 
-routes.get('/teste', TesteController.index);
 
 routes.get('/itens', Itenscontroller.index);
 routes.get('/itens/:id', Itenscontroller.show);
