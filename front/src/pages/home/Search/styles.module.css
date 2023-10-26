@@ -1,15 +1,5 @@
-#home{
-    display: flex;
-    justify-self:center;
-    height:97vh;
-    background-color: #e4e4e4;
-}
-.page{
-    justify-self:center;
-    height:97vh;
-    background-color: #e4e4e4;
-}
-.container{
+
+.searchContainer{
     display: flex;
     flex-direction:row;
     justify-content: center;

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    width:100%;
+    height: 70px;   
+    background-color: #47974b;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+  
+.img{
+
+    height: 70%;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.space{
+    width: 70%;
+}
+.leave{
+    align-self: center;
+}
+.logoutButton{
+    background-color:#47974b;
+    color: #ffffff;
+    border-color: #379e0f;
+    border-radius: 10px;
+    border-style:double;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    height: 30px;
+    width: 90px;
+}

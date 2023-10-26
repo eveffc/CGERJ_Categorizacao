@@ -3,10 +3,13 @@ import Head from 'next/head';
 import styles from './styles.module.css';
 import Logo from '../../public/img/icons/LogoV.png';
 
-const Login: React.FC = () => {
+const  Login = () => {
 
-    const [email, setEmail] = useState ("");
-    const [password, setPassword] = useState ("");
+        const [email, setEmail] = useState('');
+        const [password, setPassword] = useState('');
+        const handleLogin = () => {
+            console.log('login');
+        }
 
     return (
         <>
@@ -18,12 +21,12 @@ const Login: React.FC = () => {
             <div className={styles.container}>
             <img src={Logo.src} className={styles.img} alt="GDC"/>
                 <form className={styles.form}>
-                    <input className={styles.input} placeholder='E-mail' type='email'  id='email' ></input>
-                    <input className={styles.input} placeholder='Senha' type='password' id='password'></input>
-                    <button className={styles.submitButton} type='submit'>Entrar</button> 
+                    <input className={styles.input} placeholder='E-mail' name="email" type='email'  id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                    <input className={styles.input} placeholder='Senha' name="password" type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)} ></input>
+                    <button className={styles.submitButton} type='submit'  onClick={handleLogin}>Entrar</button> 
                 </form>
             </div>
         </>
     );
-    }
+}
 export default Login;
